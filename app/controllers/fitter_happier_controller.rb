@@ -12,7 +12,7 @@ class FitterHappierController < ActionController::Base
   
   def site_and_database_check
     table_name = (Rails::VERSION::STRING >= '2.1.0' ? 'schema_migrations' : 'schema_info')
-    query      = "SELECT max(lpad(version, 20, 0)) FROM #{table_name}"
+    query      = "SELECT max(lpad(version, 20, '0')) FROM #{table_name}"
     version    = ActiveRecord::Base.connection.select_value(query).to_i
     time       = Time.now.to_formatted_s(:rfc822)
     render(:text => "FitterHappier Site and Database Check Passed @ #{time}\nSchema Version: #{version}\n")
