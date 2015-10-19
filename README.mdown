@@ -15,6 +15,8 @@ FitterHappier provides three monitoring URIs
     FitterHappier Site and Database Check Passed @ Wed, 17 Dec 2008 14:27:57 -0800
     Schema Version: 20081217141904
 
+Note: to disable output from Rails Footnotes append '?footnotes=false' to the URIs above. Of course, Rails Footnotes is not recommended for production use.
+
 Installation
 ============
 Add the following to your gemfile
