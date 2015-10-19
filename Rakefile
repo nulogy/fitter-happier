@@ -2,6 +2,12 @@ require 'rake'
 require 'rake/testtask'
 require 'rdoc/task'
 
+begin
+  require "bundler/gem_tasks"
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks associated with creating new versions of the gem.'
+end
+
 desc 'Default: run unit tests.'
 task :default => :test
 
