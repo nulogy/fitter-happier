@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionpack (3.1.0)
       activemodel (= 3.1.0)
@@ -72,3 +72,6 @@ DEPENDENCIES
   rake
   rspec
   rspec-rails
+
+BUNDLED WITH
+   1.12.5
