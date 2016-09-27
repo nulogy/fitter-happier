@@ -1,6 +1,7 @@
 *.gem
 *.swp
 .rvmrc
+/.idea/
 Gemfile.lock
 spec/dummy/db/*
 spec/dummy/log/*
