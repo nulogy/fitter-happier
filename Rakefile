@@ -1,28 +1,19 @@
-require 'rake'
-require 'rake/testtask'
-require 'rdoc/task'
-
+#!/usr/bin/env rake
 begin
-  require "bundler/gem_tasks"
+  require 'bundler/setup'
 rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks associated with creating new versions of the gem.'
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
 
-desc 'Default: run unit tests.'
-task :default => :test
+APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
+load 'rails/tasks/engine.rake'
 
-desc 'Test the fitter_happier plugin.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = true
-end
+Bundler::GemHelper.install_tasks
 
-desc 'Generate documentation for the fitter_happier plugin.'
-RDoc::Task.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'FitterHappier'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
+require 'rspec/core'
+require 'rspec/core/rake_task'
+
+desc 'Run all specs in spec directory (excluding plugin specs)'
+RSpec::Core::RakeTask.new(:spec)
+
+task :default => :spec

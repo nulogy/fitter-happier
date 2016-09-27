@@ -2,3 +2,5 @@
 *.swp
 .rvmrc
 Gemfile.lock
+spec/dummy/db/*
+spec/dummy/log/*

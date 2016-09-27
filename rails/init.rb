@@ -1,1 +1,0 @@
-require 'fitter_happier'
