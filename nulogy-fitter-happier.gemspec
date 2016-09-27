@@ -3,7 +3,7 @@ $:.unshift(lib) unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
-  s.version      = '0.0.3'
+  s.version      = '1.0.0'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Jon Moses', 'Corey Donohoe', 'Zachary Spencer']
   s.email        = ['engineering@nulogy.com']
