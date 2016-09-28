@@ -1,5 +1,5 @@
 module FitterHappier
-  class FitterHappierController < ActionController::Base
+  class HeartbeatController < ActionController::Base
     layout nil
 
     around_action :process_with_silence
