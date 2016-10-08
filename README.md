@@ -1,4 +1,4 @@
-FitterHappier
+FitterHappier [![Code Climate](https://codeclimate.com/github/nulogy/fitter-happier/badges/gpa.svg)](https://codeclimate.com/github/nulogy/fitter-happier)
 =============
 
 FitterHappier provides actions for monitoring a rails site and database availability. FitterHappier's monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.  
