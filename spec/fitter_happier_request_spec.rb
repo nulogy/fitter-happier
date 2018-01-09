@@ -3,6 +3,10 @@ require "spec_helper"
 module FitterHappier
   RSpec.describe "FitterHappierRequestSpec", type: :request do
 
+    before do
+      allow(DatabaseCheck).to receive(:schema_version)
+    end
+
     it "can GET index" do
       get "/fitter_happier"
 
@@ -26,6 +30,16 @@ module FitterHappier
       expect(response.status).to eq(200)
       expected_body = %r{FitterHappier Site and Database Check Passed @ [A-z]{3}, \d{2} [A-z]{3} \d{4} \d{2}:\d{2}:\d{2} [0-9\-]+\nSchema Version: \d+}
       expect(response.body).to match(expected_body)
+    end
+
+    it "makes NewRelic ignore the requests" do
+      expect(NewRelicAdapter).to receive(:ignore_transaction).exactly(3).times
+
+      get "/fitter_happier"
+      get "/fitter_happier/site_check"
+      get "/fitter_happier/site_and_database_check"
+
+      expect(response.status).to eq(200)
     end
   end
 end

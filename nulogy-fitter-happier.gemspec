@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'actionpack', '>= 3.1.0'
   s.add_dependency 'activerecord', '>= 3.1.0'
   s.add_dependency 'railties', '>= 3.1.0'
+  s.add_dependency 'newrelic_rpm', '>= 4.4.0'
 
   s.add_development_dependency 'rake', '>= 0.9.2'
   s.add_development_dependency 'rspec', '>= 2.6.0'
