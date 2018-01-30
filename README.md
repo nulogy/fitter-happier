@@ -78,4 +78,6 @@ You can also do this in a keepalived/LVS setup:
       }
     }
 
-Copyright (c) 2008 atmos, released under the MIT license
+# License
+
+[Licensed until MIT](./MIT-LICENSE)

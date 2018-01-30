@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
   s.version      = '1.0.0'
   s.platform     = Gem::Platform::RUBY
-  s.authors      = ['Jon Moses', 'Corey Donohoe', 'Zachary Spencer']
+  s.authors      = ['Nulogy Corporation']
   s.email        = ['engineering@nulogy.com']
   s.homepage     = 'https://github.com/nulogy/fitter-happier'
   s.summary      = 'FitterHappier is a plug-in that provides actions for monitoring site and/or database availability for rails apps.'
