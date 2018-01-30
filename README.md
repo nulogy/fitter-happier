@@ -80,4 +80,4 @@ You can also do this in a keepalived/LVS setup:
 
 # License
 
-[Licensed until MIT](./MIT-LICENSE)
+[Licensed under MIT](./MIT-LICENSE)
