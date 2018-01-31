@@ -3,11 +3,17 @@ CHANGELOG
 
 Version 1.1
 ===========
+* Set NewRelic to Ignore Fitter Happier Requests([#2](https://github.com/nulogy/fitter-happier/pull/2))
+
+Version 1.0
+===========
+* Updates from [#1](https://github.com/nulogy/fitter-happier/pull/1):
+  * Follow latest Rails Engine standards
   * Added 2 additional URIs
     * /fitter_happier/site_check              => Timestamped site check
     * /fitter_happier/site_and_database_check => Timestamped site and database check
   * Updated the response message for /fitter_happier
 
-Version 1.0
+Version 0.3
 ===========
-  * atmos release
+* atmos release
