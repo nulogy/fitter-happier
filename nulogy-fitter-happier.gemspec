@@ -6,10 +6,13 @@ Gem::Specification.new do |s|
   s.version      = '1.1.1'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Nulogy Corporation']
+
   s.email        = ['engineering@nulogy.com']
   s.homepage     = 'https://github.com/nulogy/fitter-happier'
   s.summary      = 'FitterHappier is a plug-in that provides actions for monitoring site and/or database availability for rails apps.'
   s.description  = 'send bug reports to http://github.com/nulogy/fitter-happier/'
+
+  s.license      = 'MIT'
 
   s.files        = Dir.glob("{lib,app,config}/**/*") + %w( CHANGELOG MIT-LICENSE README.md )
   s.test_files   = Dir["spec/**/*"]
