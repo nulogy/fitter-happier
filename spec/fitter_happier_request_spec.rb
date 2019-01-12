@@ -1,8 +1,7 @@
 require "spec_helper"
 
 module FitterHappier
-  RSpec.describe "FitterHappierRequestSpec", type: :request do
-
+  RSpec.describe "FitterHappier request spec", type: :request do
     before do
       allow(DatabaseCheck).to receive(:schema_version)
     end
