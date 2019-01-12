@@ -23,11 +23,9 @@ module FitterHappier
 
     private
 
-    def process_with_silence(*args)
+    def process_with_silence
       NewRelicAdapter.ignore_transaction
-      logger.silence do
-        yield *args
-      end
+      logger.silence { yield }
     end
   end
 end
