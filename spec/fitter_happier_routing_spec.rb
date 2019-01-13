@@ -2,7 +2,7 @@ require "spec_helper"
 
 # NOTE: May not be supported on Rails 3 and require Rails 4+
 module FitterHappier
-  RSpec.describe "FitterHappierRoutingSpec", type: :routing do
+  RSpec.describe "FitterHappier routing spec", type: :routing do
     routes { FitterHappier::Engine.routes }
 
     it "tests routing" do

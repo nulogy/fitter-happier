@@ -3,25 +3,27 @@ $:.unshift(lib) unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
-  s.version      = '1.1.0'
+  s.version      = '1.1.1'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Nulogy Corporation']
+
   s.email        = ['engineering@nulogy.com']
   s.homepage     = 'https://github.com/nulogy/fitter-happier'
   s.summary      = 'FitterHappier is a plug-in that provides actions for monitoring site and/or database availability for rails apps.'
   s.description  = 'send bug reports to http://github.com/nulogy/fitter-happier/'
 
+  s.license      = 'MIT'
+
   s.files        = Dir.glob("{lib,app,config}/**/*") + %w( CHANGELOG MIT-LICENSE README.md )
   s.test_files   = Dir["spec/**/*"]
   s.require_path = 'lib'
 
-  s.add_dependency 'actionpack', '>= 3.1.0'
-  s.add_dependency 'activerecord', '>= 3.1.0'
-  s.add_dependency 'railties', '>= 3.1.0'
-  s.add_dependency 'newrelic_rpm', '>= 4.4.0'
+  s.add_dependency 'actionpack', '~> 5.0', '>= 5.0', '< 6.0'
+  s.add_dependency 'activerecord', '~> 5.0', '>= 5.0', '< 6.0'
+  s.add_dependency 'railties', '~> 5.0', '>= 5.0'
+  s.add_dependency 'newrelic_rpm', '~> 4.4', '>= 4.4.0'
 
-  s.add_development_dependency 'rake', '>= 0.9.2'
-  s.add_development_dependency 'rspec', '>= 2.6.0'
-  s.add_development_dependency 'rspec-rails', '>= 2.6.1'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rake', '~> 12.3', '>= 12.3'
+  s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8'
+  s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3'
   end
