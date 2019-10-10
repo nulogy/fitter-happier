@@ -14,6 +14,13 @@ Gem::Specification.new do |s|
 
   s.license      = 'MIT'
 
+  s.metadata = {
+    "homepage_uri" => "https://github.com/nulogy/fitter-happier",
+    "changelog_uri" => "https://github.com/nulogy/fitter-happier/blob/master/CHANGELOG",
+    "source_code_uri" => "https://github.com/nulogy/fitter-happier",
+    "bug_tracker_uri" => "https://github.com/nulogy/fitter-happier/issues"
+  }
+
   s.files        = Dir.glob("{lib,app,config}/**/*") + %w( CHANGELOG MIT-LICENSE README.md )
   s.test_files   = Dir["spec/**/*"]
   s.require_path = 'lib'
