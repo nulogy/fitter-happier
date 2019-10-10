@@ -3,7 +3,7 @@ $:.unshift(lib) unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
-  s.version      = '1.1.3'
+  s.version      = '1.1.4'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Nulogy Corporation']
 
