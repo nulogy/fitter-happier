@@ -18,12 +18,12 @@ Gem::Specification.new do |s|
   s.test_files   = Dir["spec/**/*"]
   s.require_path = 'lib'
 
-  s.add_dependency 'actionpack', '~> 5.0', '>= 5.0', '< 6.0'
-  s.add_dependency 'activerecord', '~> 5.0', '>= 5.0', '< 6.0'
-  s.add_dependency 'railties', '~> 5.0', '>= 5.0'
+  s.add_dependency 'actionpack', '< 6.1'
+  s.add_dependency 'activerecord', '< 6.1'
   s.add_dependency 'newrelic_rpm', '>= 4.4.0', '< 7.0'
+  s.add_dependency 'railties', '< 6.1'
 
   s.add_development_dependency 'rake', '~> 12.3', '>= 12.3'
   s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8'
   s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3'
-  end
+end
