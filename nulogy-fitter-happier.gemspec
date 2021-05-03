@@ -3,7 +3,7 @@ $:.unshift(lib) unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
-  s.version      = '1.1.4'
+  s.version      = '1.2.0'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Nulogy Corporation']
 
@@ -25,12 +25,12 @@ Gem::Specification.new do |s|
   s.test_files   = Dir["spec/**/*"]
   s.require_path = 'lib'
 
-  s.add_dependency 'actionpack', '< 6.1'
-  s.add_dependency 'activerecord', '< 6.1'
-  s.add_dependency 'newrelic_rpm', '>= 4.4.0', '< 7.0'
-  s.add_dependency 'railties', '< 6.1'
+  s.add_dependency 'actionpack', '>= 6.0', '< 7.0'
+  s.add_dependency 'activerecord', '>= 6.0', '< 7.0'
+  s.add_dependency 'newrelic_rpm', '>= 6.15.0', '< 7.1'
+  s.add_dependency 'railties', '>= 6.0', '< 7.0'
 
-  s.add_development_dependency 'rake', '~> 12.3', '>= 12.3'
-  s.add_development_dependency 'rspec-rails', '~> 3.8', '>= 3.8'
-  s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3'
+  s.add_development_dependency 'rake', '~> 13.0'
+  s.add_development_dependency 'rspec-rails', '~> 5.0'
+  s.add_development_dependency 'sqlite3', '~> 1.4'
 end
