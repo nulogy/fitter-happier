@@ -23,11 +23,6 @@ Add the following to your gemfile
 
     gem 'fitter-happier'
 
-Uptime Monitoring
-=================
-
-See EngineYard's support guide on [uptime monitoring for your rails application](https://web.archive.org/web/20090222170354/http://www.engineyard.com/support/guides/uptime_monitoring_for_your_rails_application)
-
 Monit
 =====
 
