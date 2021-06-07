@@ -3,14 +3,14 @@ $:.unshift(lib) unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name         = 'nulogy-fitter-happier'
-  s.version      = '1.5.0'
+  s.version      = '1.5.1'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Nulogy Corporation']
 
   s.email        = ['engineering@nulogy.com']
   s.homepage     = 'https://github.com/nulogy/fitter-happier'
   s.summary      = 'FitterHappier is a plug-in that provides actions for monitoring site and/or database availability for rails apps.'
-  s.description  = 'send bug reports to http://github.com/nulogy/fitter-happier/'
+  s.description  = 'send bug reports to https://github.com/nulogy/fitter-happier/'
 
   s.license      = 'MIT'
 
@@ -27,10 +27,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'actionpack', '>= 6.0', '< 8.0'
   s.add_dependency 'activerecord', '>= 6.0', '< 8.0'
-  s.add_dependency 'newrelic_rpm', '>= 6.15.0', '< 7.1'
+  s.add_dependency 'newrelic_rpm', '>= 6.15.0', '< 9.0'
   s.add_dependency 'railties', '>= 6.0', '< 8.0'
 
   s.add_development_dependency 'rake', '~> 13.0'
   s.add_development_dependency 'rspec-rails', '~> 5.0'
-  s.add_development_dependency 'sqlite3', '~> 1.4'
+  s.add_development_dependency 'sqlite3', '~> 1.5'
 end
