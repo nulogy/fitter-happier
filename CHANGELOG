@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Version 1.5.2
+=============
+
+* Relax NewRelic dependency
+
 Version 1.5.1
 =============
 
