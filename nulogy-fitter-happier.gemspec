@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'newrelic_rpm', '>= 8.16.0', '< 10.0'
   s.add_dependency 'railties', '>= 7.0', '< 8.1'
 
-  s.add_development_dependency 'rake', '~> 13.0'
-  s.add_development_dependency 'rspec-rails', '~> 5.0'
-  s.add_development_dependency 'sqlite3', '~> 1.5'
+  s.add_development_dependency 'rake', '~> 13.2'
+  s.add_development_dependency 'rspec-rails', '~> 7.1'
+  s.add_development_dependency 'sqlite3', '~> 2.5'
 end
