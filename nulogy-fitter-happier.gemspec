@@ -19,8 +19,7 @@ Gem::Specification.new do |s|
     "bug_tracker_uri" => "https://github.com/nulogy/fitter-happier/issues",
     "changelog_uri" => "https://github.com/nulogy/fitter-happier/blob/master/CHANGELOG",
     "homepage_uri" => "https://github.com/nulogy/fitter-happier",
-    "rubygems_mfa_required" => "true",
-    "source_code_uri" => "https://github.com/nulogy/fitter-happier"
+    "rubygems_mfa_required" => "true"
   }
 
   s.files = Dir.glob("{lib,app,config}/**/*") + %w[CHANGELOG MIT-LICENSE README.md]
