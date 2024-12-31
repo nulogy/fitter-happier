@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+Version 1.6.0
+=============
+
+* Drop support for Rails 6.x
+* Add support for Rails 8.0
+* Bump the ruby version
+* Introduce and configure rubocop
+* Introduce and configure appraisals
+
 Version 1.5.2
 =============
 

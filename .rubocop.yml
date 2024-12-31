@@ -1,0 +1,50 @@
+require:
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  TargetRubyVersion: 3.2
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ExplicitBlockArgument:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# We like to use the hash rocket in rake files.
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+  EnforcedStyle: ruby19
+  Exclude:
+    - 'Rakefile'
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  Enabled: false
+
