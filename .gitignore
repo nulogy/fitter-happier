@@ -1,7 +1,12 @@
-*.gem
-*.swp
-.rvmrc
-/.idea/
+# Ignore development tool configuration files.
+.idea/
+.vscode
+
+# None of the lock files should be checked in.
 Gemfile.lock
+gemfiles/*.gemfile.lock
+
+# Nothing volatile from the dummy app that is used for running specs.
 spec/dummy/db/*
 spec/dummy/log/*
+spec/dummy/tmp/*
