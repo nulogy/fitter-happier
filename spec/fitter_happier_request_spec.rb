@@ -1,9 +1,18 @@
 require "spec_helper"
 
 RSpec.describe "FitterHappier request spec", type: :request do
+  include ActiveSupport::Testing::TimeHelpers
+
   before do
     allow(FitterHappier::DatabaseCheck).to receive(:schema_version)
+    freeze_time
   end
+
+  after do
+    travel_back
+  end
+
+  let!(:frozen_time) { Time.now.to_formatted_s(:rfc822) }
 
   it "can GET index" do
     get "/fitter_happier"
@@ -16,7 +25,7 @@ RSpec.describe "FitterHappier request spec", type: :request do
     get "/fitter_happier/site_check"
 
     expect(response.status).to eq(200)
-    expected_body = /FitterHappier Site Check Passed @ [A-z]{3}, \d{2} [A-z]{3} \d{4} \d{2}:\d{2}:\d{2} [0-9\-]+/
+    expected_body = /FitterHappier Site Check Passed @ #{Regexp.escape(frozen_time)}/
     expect(response.body).to match(expected_body)
   end
 
@@ -26,7 +35,7 @@ RSpec.describe "FitterHappier request spec", type: :request do
     get "/fitter_happier/site_and_database_check"
 
     expect(response.status).to eq(200)
-    expected_body = /FitterHappier Site and Database Check Passed @ [A-z]{3}, \d{2} [A-z]{3} \d{4} \d{2}:\d{2}:\d{2} [0-9\-]+\nSchema Version: \d+/
+    expected_body = /FitterHappier Site and Database Check Passed @ #{Regexp.escape(frozen_time)}\nSchema Version: 12345/
     expect(response.body).to match(expected_body)
   end
 

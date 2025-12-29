@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+Version 2.0.0
+=============
+
+- Drop explicit support for Rails 7.0, and 7.1
+- Add support for Rails 8.1
+- Loosen restriction on Rails version to be less than v9 -- Rails
+  doesn't usually break its APIs for controllers
+- Add CI workflow
+- Resolve open lint infractions
+
 Version 1.6.0
 =============
 

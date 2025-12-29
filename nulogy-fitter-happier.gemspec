@@ -25,10 +25,10 @@ Gem::Specification.new do |s|
   s.files = Dir.glob("{lib,app,config}/**/*") + %w[CHANGELOG MIT-LICENSE README.md]
   s.require_path = "lib"
 
-  s.add_dependency "actionpack", ">= 7.0", "< 8.1"
-  s.add_dependency "activerecord", ">= 7.0", "< 8.1"
+  s.add_dependency "actionpack", ">= 7.0", "< 9.0"
+  s.add_dependency "activerecord", ">= 7.0", "< 9.0"
   s.add_dependency "newrelic_rpm", ">= 8.16.0", "< 10.0"
-  s.add_dependency "railties", ">= 7.0", "< 8.1"
+  s.add_dependency "railties", ">= 7.0", "< 9.0"
 
   s.add_development_dependency "appraisal", "~> 2.5"
   s.add_development_dependency "rake", "~> 13.2"
