@@ -1,5 +1,4 @@
-FitterHappier
-=============
+# FitterHappier
 
 FitterHappier provides actions for monitoring a rails site and database availability. FitterHappier's monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.  
 
@@ -17,11 +16,18 @@ FitterHappier provides three monitoring URIs
 
 Note: to disable output from Rails Footnotes append '?footnotes=false' to the URIs above. Of course, Rails Footnotes is not recommended for production use.
 
-Installation
-============
+# Installation
+
 Add the following to your gemfile
 
     gem 'fitter-happier'
+
+# Testing
+
+```
+$ bundle exec appraisal install
+$ bundle exec appraisal rake spec
+```
 
 # License
 
