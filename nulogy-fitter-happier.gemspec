@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name = "nulogy-fitter-happier"
-  s.version = "2.0.0"
+  s.version = "2.0.1"
   s.required_ruby_version = ">= 3.2"
   s.platform = Gem::Platform::RUBY
   s.authors = ["Nulogy Corporation"]
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "actionpack", ">= 7.0", "< 9.0"
   s.add_dependency "activerecord", ">= 7.0", "< 9.0"
-  s.add_dependency "newrelic_rpm", ">= 8.16.0", "< 10.0"
+  s.add_dependency "newrelic_rpm", ">= 8.16.0"
   s.add_dependency "railties", ">= 7.0", "< 9.0"
 
   s.add_development_dependency "appraisal", "~> 2.5"
